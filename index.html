@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>User Authentication</h1>
+    <div id="authForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required placeholder="Enter Username"><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required placeholder="Enter Password"><br>
+      <button onclick="login()">Login</button>
+      <button onclick="register()">Register</button>
+    </div>
+    <div id="userDetails" style="display:none;">
+      <h2>Welcome, <span id="loggedInUser"></span>!</h2>
+      <button onclick="updateDetails()">Update Details</button>
+      <button onclick="deleteUser()">Delete Account</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
